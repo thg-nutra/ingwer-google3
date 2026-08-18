@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<script defer src="https://cdn.digiraads.com/code/5893-177b2007-bfc8-4b99-b731-31cbfcd7831f"></script>   
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SlimJara — Der Ingwer-Trick Durchbruch | Offizieller Shop</title>
+<meta name="description" content="SlimJara: die natürliche Ingwer-Formel mit peruanischem Ingwer zur Unterstützung von GLP-1 und GIP. Kostenloser Versand bei 6-Dosen-Bestellung. 60-Tage-Geld-zurück-Garantie."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html,body{overflow-x:hidden;max-width:100%}
+  body{font-family:'Inter',system-ui,Arial,sans-serif;background:#FDF5E3;color:#1A2922;line-height:1.5;-webkit-font-smoothing:antialiased}
+  h1,h2,h3,.display{font-family:'Plus Jakarta Sans',system-ui,sans-serif;letter-spacing:-0.02em}
+  img{display:block;max-width:100%}
+  a{text-decoration:none;color:inherit}
+
+  /* ── Tokens ── */
+  :root{
+    --cream:#FDF5E3;
+    --cream-2:#F2EDE3;
+    --teal:#2E7D5B;
+    --teal-dark:#184A16;
+    --teal-soft:#E8F5E9;
+    --coral:#3A9B6E;
+    --coral-dark:#2E7D5B;
+    --gold:#F0A500;
+    --ink:#2C1A10;
+    --muted:#7A6050;
+    --line:#EDE0C8;
+    --shadow-sm:0 1px 2px rgba(24,74,22,.06),0 2px 6px rgba(24,74,22,.04);
+    --shadow:0 8px 24px rgba(24,74,22,.08),0 2px 6px rgba(24,74,22,.04);
+    --shadow-lg:0 20px 50px rgba(24,74,22,.12),0 6px 16px rgba(24,74,22,.05);
+  }
+
+  /* ── Sticky CTA ── */
+  .sticky-cta{position:fixed;bottom:0;left:0;right:0;z-index:999;background:#184A16;padding:14px 24px;display:flex;align-items:center;justify-content:center;gap:20px;box-shadow:0 -8px 24px rgba(24,74,22,.35);transform:translateY(100%);transition:transform .35s ease;flex-wrap:wrap}
+  .sticky-cta.visible{transform:translateY(0)}
+  .sticky-cta-txt{color:#fff;font-size:14px;font-weight:700;line-height:1.3;text-align:right}
+  .sticky-cta-txt span{color:#FFD782;font-weight:800}
+  .sticky-cta-btn{background:#fff;color:#184A16;border-radius:999px;padding:13px 28px;font-size:15px;font-weight:800;white-space:nowrap;letter-spacing:.3px;transition:transform .15s ease,background .2s,box-shadow .2s;box-shadow:0 4px 14px rgba(0,0,0,.25);flex-shrink:0}
+  .sticky-cta-btn:hover{background:#FFD782;transform:translateY(-1px);box-shadow:0 6px 18px rgba(0,0,0,.3)}
+
+  /* ── Step Nav ── */
+  .section-nav{background:#FFF3D0;padding:36px 20px 44px;position:relative;border-bottom:3px solid #FFD782;}
+  .nav-inner{max-width:980px;margin:0 auto;position:relative;z-index:2}
+  .steps-row{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:20px}
+  .step-pill{border:1.5px solid rgba(24,74,22,.3);border-radius:999px;padding:6px 18px;font-size:12px;font-weight:700;color:rgba(24,74,22,.6);letter-spacing:.6px;background:transparent}
+  .step-pill.active{background:#184A16;color:#FFD782;border-color:#184A16;box-shadow:0 4px 12px rgba(24,74,22,.2)}
+  .step-arrow{color:rgba(24,74,22,.4);font-size:14px}
+  .nav-title{text-align:center;font-size:34px;font-weight:800;color:#184A16;line-height:1.15}
+  .nav-title span{color:#2E7D5B}
+
+  /* ── Pricing Section ── */
+  .section-main{background:var(--cream);padding:44px 16px 48px}
+  .potes-holder-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1080px;margin:0 auto 36px;align-items:stretch}
+  .pote-card{background:#fff;border:1.5px solid #ccc;border-radius:20px;overflow:hidden;display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease;box-shadow:var(--shadow-sm)}
+  .pote-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .pote-card.popular{border:2px solid var(--teal);box-shadow:var(--shadow-lg);transform:translateY(-8px);position:relative;background:#fff}
+  .pote-card.popular::before{content:none}
+  .pote-header{background:#f0f0f0;color:var(--muted);text-align:center;padding:10px 12px;font-size:13px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase}
+  .pote-header.popular{background:linear-gradient(135deg,var(--teal),var(--teal-dark));color:#fff;font-size:14px;letter-spacing:1.2px}
+  .pote-body{padding:22px 18px 20px;display:flex;flex-direction:column;flex:1;text-align:center}
+  .pote-name{font-family:'Plus Jakarta Sans',sans-serif;font-size:31px;font-weight:800;color:var(--ink);letter-spacing:-.02em;margin-bottom:2px}
+  .pote-name.popular{color:var(--teal)}
+  .pote-supply{font-size:12px;font-weight:600;color:var(--muted);letter-spacing:.5px;text-transform:uppercase;margin-bottom:2px}
+  .pote-img-wrap{margin:0 auto 16px;display:flex;justify-content:center;align-items:flex-end;width:100%}
+  .pote-img-wrap img{max-height:170px;width:auto;object-fit:contain}
+  .pote-img-wrap.tall img{max-height:180px}
+  .pote-img-wrap.bigger img{max-height:185px}
+  .price-wrap{display:flex;align-items:flex-start;justify-content:center;gap:8px;margin-bottom:4px}
+  .pote-price{font-family:'Plus Jakarta Sans',sans-serif;font-size:46px;font-weight:800;color:var(--ink);line-height:1;letter-spacing:-.03em}
+  .pote-price.popular{color:var(--teal)}
+  .per-label{font-size:10px;font-weight:700;color:var(--muted);text-align:left;line-height:1.25;text-transform:uppercase;letter-spacing:.5px;padding-top:6px}
+  .price-total{font-size:13px;font-weight:600;color:var(--ink);text-align:center;margin-bottom:10px}
+  .price-total s{color:#A8B2AC;font-weight:500;margin-right:4px}
+  .daily-price{display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:14px;font-size:15px;font-weight:700;color:var(--teal)}
+  .daily-price .chk-square{width:22px;height:22px;min-width:22px;border-radius:5px;background:#2E7D5B;display:inline-flex;align-items:center;justify-content:center}
+  .daily-price .chk-square svg{width:14px;height:14px}
+  .daily-price .popular-txt{font-size:16px;font-weight:800}
+  .pote-bonuses{margin-bottom:16px;text-align:left;padding:14px 14px;background:#FFF8EE;border-radius:12px;border:1px solid var(--line)}
+  .pote-bonus-row,.savings-row{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:8px}
+  .pote-bonus-row:last-child,.savings-row:last-child{margin-bottom:0}
+  .chk-icon{width:18px;height:18px;min-width:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .chk-icon svg{width:18px;height:18px}
+  .buy-btn{position:relative;display:flex;align-items:center;justify-content:center;gap:14px;width:100%;max-width:280px;margin:auto auto 10px;padding:16px 56px 16px 24px;border-radius:10px;font-family:'Montserrat',Arial,sans-serif;font-size:22px;font-weight:900;letter-spacing:1.2px;color:#0b3a8a;text-shadow:0 1px 0 rgba(255,255,255,.45);background:linear-gradient(180deg,#fff48a 0%,#ffd700 45%,#f0b400 100%);box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -3px 0 rgba(160,100,0,.25),0 6px 16px rgba(0,0,0,.22);border:1px solid #c98a00;transition:transform .15s ease,filter .2s,box-shadow .2s}
+  .buy-btn::after{content:"";position:absolute;right:8px;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#5fb4e8 0%,#1e7fc4 70%,#155f96 100%) center/cover no-repeat,#1e7fc4;box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 2px 4px rgba(0,0,0,.25);background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'><circle cx='9' cy='20' r='1.4'/><circle cx='17' cy='20' r='1.4'/><path d='M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.6a2 2 0 0 0 2-1.5L21 8H6'/></svg>"),radial-gradient(circle at 35% 30%,#5fb4e8 0%,#1e7fc4 70%,#155f96 100%);background-repeat:no-repeat,no-repeat;background-position:center,center;background-size:60% 60%,cover}
+  .buy-btn:hover{transform:translateY(-2px);filter:brightness(1.05);box-shadow:inset 0 1px 0 rgba(255,255,255,.85),inset 0 -3px 0 rgba(160,100,0,.25),0 10px 22px rgba(0,0,0,.28)}
+  .buy-btn:active{transform:translateY(0)}
+  .secure-line{display:flex;align-items:center;justify-content:center;gap:5px;font-size:11px;font-weight:600;color:var(--muted);margin-bottom:6px}
+  .secure-line svg{width:11px;height:11px;flex-shrink:0}
+  .cards-img{margin:4px auto;display:block;max-width:170px;opacity:.85}
+  .pote-shipping{font-size:12px;font-weight:700;color:var(--teal);text-align:center;margin-top:4px}
+
+  /* ── Guarantee Block ── */
+  .guarantee-block{background:#fff;border-radius:24px;padding:40px 28px;max-width:880px;margin:0 auto;border:1px solid var(--line);box-shadow:var(--shadow)}
+  .guarantee-title{text-align:center;font-size:28px;font-weight:800;color:var(--ink);line-height:1.25;margin-bottom:28px}
+  .guarantee-title span{color:var(--teal)}
+  .guarantee-row{display:flex;flex-direction:column;align-items:center;gap:18px;margin-bottom:32px}
+  .guarantee-badge{width:130px;height:130px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--teal-soft);padding:8px}
+  .guarantee-badge img{width:100%;height:100%;object-fit:contain;border-radius:50%}
+  .guarantee-text{font-size:15px;color:var(--ink);line-height:1.75;text-align:center;max-width:680px}
+  .guarantee-text strong{color:var(--teal);font-weight:700}
+  .certs-row{display:flex;justify-content:center;margin-bottom:22px}
+  .certs-row img{max-width:100%;max-height:110px;object-fit:contain;opacity:.9}
+  .made-in{text-align:center;font-size:14px;color:var(--muted);line-height:1.7}
+  .made-in strong{color:var(--ink)}
+
+  /* ── Ship Banner ── */
+  .ship-banner{background:#184A16;padding:28px 32px;display:flex;align-items:center;justify-content:center;gap:28px;text-align:left;position:relative;overflow:hidden;border-top:none;border-bottom:none}
+  .ship-banner::before{content:""}
+  .ship-banner .truck{display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .ship-banner .txt-wrap{position:relative}
+  .ship-banner .main-txt{color:#FFD782;font-size:26px;font-weight:800;font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.01em}
+  .ship-banner .sub-txt{color:rgba(255,255,255,.8);font-size:16px;margin-top:6px}
+  .ship-banner .sub-txt span{color:#FFD782;font-weight:700}
+
+  /* ── SlimJara Story ── */
+  .leanzene-section{background:#FDF5E3;padding:64px 24px;position:relative;overflow:hidden}
+  .leanzene-section::before{content:""}
+  .leanzene-section::after{content:""}
+  .leanzene-inner{position:relative;max-width:980px;margin:0 auto;background:#fff;border-radius:28px;padding:44px;box-shadow:var(--shadow);border:1px solid var(--line);display:flex;flex-direction:column;gap:36px}
+  .lean-top{display:flex;align-items:center;gap:48px}
+  .lean-img-col{flex:0 0 320px;display:flex;justify-content:center}
+  .lean-img{width:100%;aspect-ratio:1/1;border-radius:20px;background:#FFF3D0;display:flex;align-items:center;justify-content:center;padding:24px}
+  .lean-img img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 12px 24px rgba(14,92,78,.18))}
+  .lean-text-col{flex:1}
+  .lean-pre{display:inline-block;color:var(--teal);font-size:12px;font-weight:700;margin-bottom:10px;letter-spacing:1.2px;text-transform:uppercase;padding:4px 12px;background:var(--teal-soft);border-radius:999px}
+  .lean-brand{font-family:'Plus Jakarta Sans',sans-serif;color:var(--ink);font-size:44px;font-weight:800;margin-bottom:18px;letter-spacing:-.03em;line-height:1}
+  .lean-headline{color:var(--ink);font-size:24px;font-weight:500;line-height:1.4;margin-bottom:16px;font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-.01em}
+  .lean-headline strong{font-weight:800;color:var(--teal)}
+  .lean-desc{color:var(--muted);font-size:15px;line-height:1.75}
+
+  /* ── Badges ── */
+  .badges-inner{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .badge-item{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;transition:transform .2s ease,border-color .2s ease;min-width:0}
+  .badge-item:hover{transform:translateY(-2px);border-color:var(--teal)}
+  .badge-icon{width:42px;height:42px;min-width:42px;border-radius:50%;background:var(--teal-soft);display:flex;align-items:center;justify-content:center}
+  .badge-icon svg{width:22px;height:22px}
+  .badge-icon svg path,.badge-icon svg circle,.badge-icon svg rect,.badge-icon svg line{stroke:var(--teal)}
+  .badge-label{font-size:13px;font-weight:700;color:var(--ink);line-height:1.25}
+
+  /* ── Reviews ── */
+  .reviews-section{background:#FDF5E3;padding:64px 24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .reviews-inner{max-width:820px;margin:0 auto}
+  .reviews-title{text-align:center;font-size:32px;font-weight:800;color:var(--ink);line-height:1.2;margin-bottom:10px;letter-spacing:-.02em}
+  .reviews-title br{display:block}
+  .reviews-count{text-align:center;font-size:14px;color:var(--muted);font-weight:600;margin-bottom:40px}
+  .reviews-count .stars{color:var(--gold);font-size:18px;letter-spacing:2px;display:block;margin-bottom:6px}
+  .reviews-count span{color:var(--teal);font-weight:800}
+  .review-item{display:flex;gap:18px;margin-bottom:28px;padding:24px;background:#fff;border:1px solid var(--line);border-radius:18px}
+  .review-item:last-child{margin-bottom:0}
+  .review-avatar{width:60px;height:60px;min-width:60px;border-radius:50%;background:var(--teal-soft);overflow:hidden;border:3px solid #fff;box-shadow:var(--shadow-sm)}
+  .review-avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+  .review-content{flex:1;min-width:0}
+  .review-headline{font-family:'Plus Jakarta Sans',sans-serif;font-size:18px;font-weight:800;color:var(--ink);margin-bottom:6px;letter-spacing:-.01em}
+  .review-stars{display:flex;align-items:center;gap:3px;margin-bottom:10px;flex-wrap:wrap}
+  .star{color:var(--gold);font-size:15px}
+  .verified{font-size:11px;font-weight:700;color:var(--teal);margin-left:8px;background:var(--teal-soft);padding:3px 8px;border-radius:999px;text-transform:uppercase;letter-spacing:.5px}
+  .review-quote{font-size:14px;color:var(--ink);line-height:1.7;margin-bottom:14px;font-style:italic}
+  .review-footer{display:flex;align-items:center;gap:12px}
+  .review-product-img{width:48px;height:48px;border-radius:10px;overflow:hidden;background:var(--teal-soft);display:flex;align-items:center;justify-content:center;padding:4px}
+  .review-product-img img{width:100%;height:100%;object-fit:contain}
+  .review-meta{font-size:12px;color:var(--muted);line-height:1.4}
+  .review-meta .name{font-weight:700;color:var(--ink)}
+  .review-meta .purchase{font-weight:600;color:var(--teal);font-size:11px}
+
+  /* ── FAQ ── */
+  .faq-section{background:#FDF5E3;padding:64px 24px}
+  .faq-inner{max-width:820px;margin:0 auto}
+  .faq-eyebrow{text-align:center;color:var(--teal);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px}
+  .faq-title{text-align:center;font-size:32px;font-weight:800;color:var(--ink);margin-bottom:36px;letter-spacing:-.02em}
+  .faq-item{margin-bottom:12px}
+  .faq-toggle{display:none}
+  .faq-label{display:flex;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;font-size:15px;font-weight:700;color:var(--ink);cursor:pointer;user-select:none;transition:all .2s ease}
+  .faq-label:hover{border-color:var(--teal)}
+  .faq-label::after{content:"+";font-size:24px;font-weight:400;color:var(--teal);transition:transform .3s;flex-shrink:0;margin-left:12px;line-height:1}
+  .faq-toggle:checked + .faq-label{border-radius:14px 14px 0 0;border-color:var(--teal);background:var(--teal-soft)}
+  .faq-toggle:checked + .faq-label::after{transform:rotate(45deg)}
+  .faq-body{max-height:0;overflow:hidden;background:#fff;border:1px solid var(--line);border-top:0;border-radius:0 0 14px 14px;transition:max-height .35s ease,padding .25s ease;padding:0 22px}
+  .faq-toggle:checked ~ .faq-body{max-height:600px;padding:20px 22px 22px;border-color:var(--teal)}
+  .faq-body p{font-size:14px;color:var(--muted);line-height:1.75;margin-bottom:12px}
+  .faq-body p:last-child{margin-bottom:0}
+  .faq-body strong{color:var(--ink)}
+
+  /* ── Final CTA ── */
+  .cta-section{background:var(--cream)}
+  .cta-banner-wrap{background:linear-gradient(135deg,var(--teal) 0%,var(--teal-dark) 100%);padding:56px 24px 80px;text-align:center;position:relative;overflow:hidden}
+  .cta-banner-wrap::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 30%,rgba(232,176,74,.15),transparent 50%),radial-gradient(circle at 80% 70%,rgba(46,125,91,.12),transparent 50%);pointer-events:none}
+  .cta-banner h2{color:#fff;font-size:34px;font-weight:800;line-height:1.2;letter-spacing:-.02em;position:relative;white-space:nowrap}
+  .cta-banner h2 span{color:var(--gold)}
+  .cta-cards-wrap{padding:24px 16px 56px;background:var(--cream);position:relative}
+  .final-cta-grid{margin-top:18px}
+
+  /* ── Footer ── */
+  .section-footer{background:var(--teal-dark);padding:40px 24px;text-align:center}
+  .footer-links-holder{display:flex;justify-content:center;gap:24px;margin-bottom:20px;flex-wrap:wrap}
+  .footer-link{font-size:12px;font-weight:700;color:rgba(255,255,255,.85);letter-spacing:1px;text-transform:uppercase;transition:color .2s}
+  .footer-link:hover{color:var(--gold)}
+  .footer-text{font-size:11px;color:rgba(255,255,255,.55);line-height:1.7;max-width:820px;margin:0 auto}
+
+  /* ── Responsive ── */
+  @media (max-width:900px){
+    .potes-holder-grid{grid-template-columns:1fr;max-width:420px;gap:16px}
+    .pote-card.popular{transform:none}
+    .lean-top{flex-direction:column;gap:28px}
+    .lean-img-col{flex:none;width:100%;max-width:300px}
+    .badges-inner{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:640px){
+    .section-nav{padding:24px 16px 36px}
+    .nav-title{font-size:24px}
+    .step-pill{font-size:11px;padding:5px 12px}
+    .section-main{padding:34px 12px 32px}
+    .pote-body{padding:18px 16px}
+    .pote-name{font-size:26px}
+    .pote-price{font-size:38px}
+    .guarantee-block{padding:28px 20px;border-radius:18px}
+    .guarantee-title{font-size:22px}
+    .ship-banner{flex-direction:column;text-align:center;gap:10px;padding:22px 16px}
+    .ship-banner .main-txt{font-size:16px}
+    .leanzene-section{padding:36px 12px}
+    .leanzene-inner{padding:24px;border-radius:20px;gap:24px}
+    .lean-brand{font-size:34px}
+    .lean-headline{font-size:19px}
+    .lean-pre{font-size:11px}
+    .badges-inner{grid-template-columns:1fr 1fr;gap:10px}
+    .badge-item{padding:10px 12px;gap:10px}
+    .badge-icon{width:36px;height:36px;min-width:36px}
+    .badge-icon svg{width:18px;height:18px}
+    .badge-label{font-size:12px}
+    .reviews-section{padding:40px 12px}
+    .reviews-title{font-size:24px}
+    .review-item{flex-direction:column;padding:18px;gap:12px}
+    .review-avatar{width:52px;height:52px;min-width:52px}
+    .faq-section{padding:40px 12px}
+    .faq-title{font-size:24px}
+    .faq-label{padding:14px 18px;font-size:14px}
+    .cta-banner-wrap{padding:44px 16px 40px}
+    .cta-banner h2{font-size:24px;white-space:normal}
+    .cta-cards-wrap{padding:24px 16px 56px}
+    .final-cta-grid{margin-top:24px}
+    .sticky-cta{padding:12px 16px;gap:8px;flex-direction:column;text-align:center}
+    .sticky-cta-txt{font-size:13px;text-align:center}
+    .sticky-cta-btn{padding:12px 24px;font-size:14px;width:100%;max-width:280px;text-align:center}
+  }
+
+  /* ── TOP BAR — stock + timer ── */
+  .fm-top-bar{background:#FDF5E3;border-bottom:2px solid var(--line);display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:0;}
+  .fm-stock-side{padding:10px 20px;font-size:14px;font-weight:700;color:var(--ink);display:flex;flex-direction:column;align-items:center;gap:4px;}
+  .fm-stock-side span{color:#cc3300;font-weight:800;}
+  .fm-timer-side{padding:0;font-size:13px;font-weight:700;color:var(--muted);display:flex;align-items:center;gap:8px;}
+  .fm-timer-side .timer-val{font-size:20px;font-weight:900;color:var(--teal);letter-spacing:2px;animation:cdpulse 1s ease-in-out infinite;}
+  @keyframes cdpulse{0%,100%{opacity:1;}50%{opacity:.6;}}
+  .fm-timer-side .timer-val.expired{color:#cc3300;animation:none;}
+  @media(max-width:640px){
+    .fm-top-bar{flex-direction:column;}
+    .fm-stock-side{border-right:none;border-bottom:2px solid var(--line);width:100%;justify-content:center;}
+    .fm-timer-side{justify-content:center;width:100%;}
+  }
+</style>
+</head>
+<body>
+
+<!-- STICKY CTA -->
+<div class="sticky-cta" id="stickyCta">
+  <div class="sticky-cta-txt">⏳ Nur noch <span>6 Dosen</span> auf Lager — sichern Sie sich Ihren Rabatt!</div>
+  <a class="sticky-cta-btn" href="https://www.checkout-ds24.com/product/651021?aff=thiagorios">RABATT SICHERN →</a>
+</div>
+
+<!-- STEP NAV -->
+<section class="section-nav">
+  <div class="nav-inner">
+    <div class="steps-row">
+      <div class="step-pill active">SCHRITT 1</div>
+      <span class="step-arrow">→</span>
+      <div class="step-pill">SCHRITT 2</div>
+      <span class="step-arrow">→</span>
+      <div class="step-pill">SCHRITT 3</div>
+    </div>
+    <h1 class="nav-title"><span>SCHRITT 1:</span> Wählen Sie Ihr vergünstigtes<br>SlimJara-Paket</h1>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section-main" id="cards-top">
+  <div class="potes-holder-grid" id="first-pricing-grid">
+
+    <!-- 6 DOSEN — BELIEBTESTE WAHL -->
+    <div class="pote-card popular">
+      <div class="pote-header popular">🏆 Bestes Angebot — Empfohlen</div>
+      <div class="pote-body">
+        <div class="pote-name popular">6 Dosen</div>
+        <div class="pote-supply">180 Tage Vorrat</div>
+        <div class="pote-img-wrap tall"><img alt="6 Dosen" src="/images/6-unidades-1.png"/></div>
+        <div class="price-wrap">
+          <div class="pote-price popular">€49</div>
+          <div class="per-label">pro<br/>Dose</div>
+        </div>
+        <div class="price-total">Gesamt: <s>€594</s> €294</div>
+        <div class="daily-price"> ✅ <span class="popular-txt">Nur €1,63/Tag</span></div>
+        <div class="pote-bonuses">
+          <div class="pote-bonus-row">
+            <span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>
+            Sie sparen €300!
+          </div>
+          <div class="pote-bonus-row">
+            <span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>
+            Größter Rabatt
+          </div>
+          <div class="pote-bonus-row">
+            <span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>
+            Gratis Geschenk inklusive
+          </div>
+          <div class="pote-bonus-row">
+            <span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>
+            Kostenloser Versand
+          </div>
+          <div class="pote-bonus-row">
+            <span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>
+            60-Tage-Garantie
+          </div>
+        </div>
+        <a class="buy-btn" href="https://www.checkout-ds24.com/product/651021?aff=thiagorios">JETZT KAUFEN</a>
+        <div class="secure-line"><svg fill="none" viewbox="0 0 24 24"><rect height="10" rx="2" stroke="#5A6B63" stroke-width="1.8" width="14" x="5" y="11"/><path d="M8 11V7a4 4 0 018 0v4" stroke="#5A6B63" stroke-linecap="round" stroke-width="1.8"/></svg>Sichere Bezahlung</div>
+        <img alt="Zahlungsmethoden" class="cards-img" src="/images/cards.png"/>
+        <div class="pote-shipping">Kostenloser Versand!</div>
+      </div>
+    </div>
+
+    <!-- 3 DOSEN -->
+    <div class="pote-card">
+      <div class="pote-header">Gutes Angebot</div>
+      <div class="pote-body">
+        <div class="pote-name">3 Dosen</div>
+        <div class="pote-supply">90 Tage Vorrat</div>
+        <div class="pote-img-wrap bigger"><img alt="3 Dosen" src="/images/3-unidades-1.png"/></div>
+        <div class="price-wrap">
+          <div class="pote-price">€69</div>
+          <div class="per-label">pro<br/>Dose</div>
+        </div>
+        <div class="price-total">Gesamt: <s>€297</s> €207</div>
+        <div class="daily-price">✅ Nur €2,30/Tag</div>
+        <div class="pote-bonuses">
+          <div class="pote-bonus-row">
+            <span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>
+            60-Tage-Geld-zurück-Garantie
+          </div>
+          <div class="savings-row">
+            <span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>
+            Kostenloser Versand + Gratis Geschenk
+          </div>
+        </div>
+        <a class="buy-btn" href="https://www.checkout-ds24.com/product/651019?aff=thiagorios">JETZT KAUFEN</a>
+        <div class="secure-line"><svg fill="none" viewbox="0 0 24 24"><rect height="10" rx="2" stroke="#5A6B63" stroke-width="1.8" width="14" x="5" y="11"/><path d="M8 11V7a4 4 0 018 0v4" stroke="#5A6B63" stroke-linecap="round" stroke-width="1.8"/></svg>Sichere Bezahlung</div>
+        <img alt="Zahlungsmethoden" class="cards-img" src="/images/cards.png"/>
+        <div class="pote-shipping">Kostenloser Versand!</div>
+      </div>
+    </div>
+
+    <!-- 2 DOSEN -->
+    <div class="pote-card">
+      <div class="pote-header">Basis</div>
+      <div class="pote-body">
+        <div class="pote-name">2 Dosen</div>
+        <div class="pote-supply">60 Tage Vorrat</div>
+        <div class="pote-img-wrap bigger"><img alt="2 Dosen" src="/images/2-unidades.png"/></div>
+        <div class="price-wrap">
+          <div class="pote-price">€79</div>
+          <div class="per-label">pro<br/>Dose</div>
+        </div>
+        <div class="price-total">Gesamt: <s>€198</s> €158</div>
+        <div class="pote-bonuses">
+          <div class="pote-bonus-row">
+            <span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>
+            60-Tage-Geld-zurück-Garantie
+          </div>
+          <div class="savings-row">
+            <span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>
+            Sparen Sie €40 — 20% Rabatt
+          </div>
+        </div>
+        <a class="buy-btn" href="https://www.checkout-ds24.com/product/663681?aff=thiagorios">JETZT KAUFEN</a>
+        <div class="secure-line"><svg fill="none" viewbox="0 0 24 24"><rect height="10" rx="2" stroke="#5A6B63" stroke-width="1.8" width="14" x="5" y="11"/><path d="M8 11V7a4 4 0 018 0v4" stroke="#5A6B63" stroke-linecap="round" stroke-width="1.8"/></svg>Sichere Bezahlung</div>
+        <img alt="Zahlungsmethoden" class="cards-img" src="/images/cards.png"/>
+        <div class="pote-shipping">+ Versandkosten</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- GUARANTEE BLOCK 1 -->
+  <div class="guarantee-block">
+    <h2 class="guarantee-title">100% Zufriedenheit<br/><span>60-Tage-Geld-zurück-Garantie</span></h2>
+    <div class="guarantee-row">
+      <div class="guarantee-badge">
+        <img alt="60 Tage Garantie" src="/images/garantie.png"/>
+      </div>
+      <div class="guarantee-text">
+        Ihre heutige Bestellung ist durch unsere eiserne 60-Tage-<strong>100%-Geld-zurück-Garantie</strong> geschützt. Wenn Sie nicht begeistert sind, wie schnell Ihre hartnäckigen Fettpolster <strong>schmelzen</strong> und sich in reine Energie verwandeln, oder staunen, wenn Sie Ihren neuen <strong>schlanken, straffen</strong> Körper im Spiegel bewundern — dann lassen Sie es uns innerhalb von <strong>60 Tagen</strong> wissen und wir erstatten Ihnen jeden einzelnen Cent zurück. Senden Sie einfach die ungeöffneten Dosen in einwandfreiem Zustand zurück und wir veranlassen sofort Ihre vollständige Rückerstattung. Keine Fragen gestellt.
+      </div>
+    </div>
+    <div class="certs-row"><img alt="Zertifizierungen" src="/images/c.png"/></div>
+    <p class="made-in"><strong>SlimJara wird nach höchsten Qualitätsstandards hergestellt</strong> mit den besten natürlichen Inhaltsstoffen.</p>
+  </div>
+</section>
+
+<!-- SHIP BANNER -->
+<div class="ship-banner">
+  <div class="truck"><img alt="Kostenloser Versand" src="/images/shipping-seal.png" style="width:100px;height:auto;display:block"/></div>
+  <div class="txt-wrap">
+    <div class="main-txt">Jede 6-Dosen-Bestellung wird<br/>&nbsp;KOSTENLOS versendet!</div>
+    <div class="sub-txt">*96% der Kunden bestellen 6 Dosen<br/>(unsere empfohlene Option)</div>
+  </div>
+</div>
+
+<!-- SLIMJARA STORY + BADGES -->
+<section class="leanzene-section">
+  <div class="leanzene-inner">
+    <div class="lean-top">
+      <div class="lean-img-col">
+        <div class="lean-img"><img alt="SlimJara" src="/images/3-unidades-1.png"/></div>
+      </div>
+      <div class="lean-text-col">
+        <div class="lean-pre">Deshalb haben wir entwickelt</div>
+        <div class="lean-brand">SlimJara</div>
+        <div class="lean-headline">SlimJara ist anders als <strong>alles</strong>, was Sie je probiert haben.</div>
+        <div class="lean-desc">Es ist eines der wenigen Produkte weltweit, das eine kraftvolle Mischung aus peruanischem Ingwer und GLP-1/GIP-aktivierenden Nährstoffen enthält — speziell formuliert, um die natürliche Fettverbrennung zu unterstützen und Ihnen zu helfen, jeden Morgen leichter aufzuwachen. Empfohlen von Dra. Carola Holzner.</div>
+      </div>
+    </div>
+    <div class="badges-inner">
+      <div class="badge-item">
+        <div class="badge-icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></div>
+        <div class="badge-label">Natürliche Formel</div>
+      </div>
+      <div class="badge-item">
+        <div class="badge-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 3C9 7 5 9 5 13a7 7 0 0014 0c0-4-4-6-7-10z" stroke-width="1.6"/><path d="M12 9v6M9.5 14l2.5 2 2.5-2" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg></div>
+        <div class="badge-label">Pflanzliche Zutaten</div>
+      </div>
+      <div class="badge-item">
+        <div class="badge-icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke-width="1.6"/><path d="M8 12h8M12 8v8" stroke-linecap="round" stroke-width="1.8"/></svg></div>
+        <div class="badge-label">Ohne Gentechnik</div>
+      </div>
+      <div class="badge-item">
+        <div class="badge-icon"><svg fill="none" viewbox="0 0 24 24"><rect height="8" rx="1.5" stroke-width="1.6" width="9" x="7.5" y="11"/><path d="M9.5 11V8a2.5 2.5 0 015 0v3" stroke-linecap="round" stroke-width="1.6"/></svg></div>
+        <div class="badge-label">Leicht einzunehmen</div>
+      </div>
+      <div class="badge-item">
+        <div class="badge-icon"><svg fill="none" viewbox="0 0 24 24"><circle cx="12" cy="12" r="8" stroke-width="1.6"/><line stroke-linecap="round" stroke-width="1.8" x1="7.5" x2="16.5" y1="16.5" y2="7.5"/></svg></div>
+        <div class="badge-label">Ohne Stimulanzien</div>
+      </div>
+      <div class="badge-item">
+        <div class="badge-icon"><svg fill="none" viewbox="0 0 24 24"><path d="M12 21C7 17 3 14 3 9a5 5 0 0110 0 5 5 0 0110 0c0 5-4 8-9 12z" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></div>
+        <div class="badge-label">Nicht süchtig machend</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEWERTUNGEN -->
+<section class="reviews-section">
+  <div class="reviews-inner">
+    <h2 class="reviews-title">Echte SlimJara-Anwenderinnen.<br/>Echte lebensverändernde Ergebnisse.</h2>
+    <p class="reviews-count"><span class="stars">★ ★ ★ ★ ★</span><span>28.941 verifizierte Bewertungen</span> — Durchschnitt 4,9/5</p>
+
+    <div class="review-item">
+      <div class="review-avatar"><img alt="Anna Müller" src="/images/woman_1.webp"/></div>
+      <div class="review-content">
+        <div class="review-headline">Anna hat 16 kg abgenommen…</div>
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="verified">Verifizierter Kauf</span></div>
+        <div class="review-quote">"Ich hatte alles versucht — Keto, Intervallfasten, Sie nennen es. Nichts hat funktioniert. Drei Wochen nach dem Ingwer-Trick waren meine Hosen schon lockerer. Nach 2 Monaten habe ich 16 Kilo verloren und fühle mich wieder wie ich selbst. Ich kann nicht glauben, dass es so einfach war."</div>
+        <div class="review-footer">
+          <div class="review-product-img"><img alt="6 Dosen" src="/images/6-unidades-1.png"/></div>
+          <div class="review-meta">
+            <div><span class="name">Anna Müller</span> — München, DE</div>
+            <div class="purchase">SlimJara 6 Dosen gekauft</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-item">
+      <div class="review-avatar"><img alt="Ingrid Fischer" src="/images/woman_2.webp"/></div>
+      <div class="review-content">
+        <div class="review-headline">Ingrid hat 11 kg verloren…</div>
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="verified">Verifizierter Kauf</span></div>
+        <div class="review-quote">"Mein Stoffwechsel fühlte sich komplett tot an. Ich habe zugenommen, nur weil ich Essen angeschaut habe. SlimJara hat alles verändert — 11 Kilo in 6 Wochen verloren. Meine Energie ist durch die Decke und ich gehe wieder ins Fitnessstudio. Das funktioniert wirklich."</div>
+        <div class="review-footer">
+          <div class="review-product-img"><img alt="3 Dosen" src="/images/3-unidades-1.png"/></div>
+          <div class="review-meta">
+            <div><span class="name">Ingrid Fischer</span> — Hamburg, DE</div>
+            <div class="purchase">SlimJara 3 Dosen gekauft</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-item">
+      <div class="review-avatar"><img alt="Helga Braun" src="/images/woman_3.webp"/></div>
+      <div class="review-content">
+        <div class="review-headline">Helga hat 18 kg abgenommen…</div>
+        <div class="review-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="verified">Verifizierter Kauf</span></div>
+        <div class="review-quote">"Ich war anfangs skeptisch — noch ein Nahrungsergänzungsmittel? Aber meine Schwester hat mich überredet, den Ingwer-Trick auszuprobieren. 18 Kilo weniger in 3 Monaten. Letztes Wochenende bin ich 5 km gelaufen. Mein Arzt sagte, was auch immer ich mache, ich soll weitermachen. Die Antwort ist SlimJara."</div>
+        <div class="review-footer">
+          <div class="review-product-img"><img alt="6 Dosen" src="/images/6-unidades-1.png"/></div>
+          <div class="review-meta">
+            <div><span class="name">Helga Braun</span> — Wien, AT</div>
+            <div class="purchase">SlimJara 6 Dosen gekauft</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="faq-inner">
+    <div class="faq-eyebrow">Haben Sie Fragen?</div>
+    <h2 class="faq-title">Häufig gestellte Fragen</h2>
+
+    <div class="faq-item">
+      <input class="faq-toggle" id="faq1" type="checkbox"/>
+      <label class="faq-label" for="faq1">Ist SlimJara das Richtige für mich?</label>
+      <div class="faq-body">
+        <p><strong>Kämpfen Sie mit hartnäckigem Fett, das einfach nicht verschwinden will — egal wie sehr Sie Diät halten oder Sport treiben?</strong> Dann lautet die Antwort ja: <strong>SlimJara wurde für Sie entwickelt.</strong></p>
+        <p>Es hat bereits das Leben tausender Frauen verändert, im Alter von 30 bis 80, indem es die natürliche GLP-1- und GIP-Produktion unterstützt und <strong>hilft, hartnäckiges Fett zu verbrennen — selbst in den widerstandsfähigsten Zonen.</strong></p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input class="faq-toggle" id="faq2" type="checkbox"/>
+      <label class="faq-label" for="faq2">Ist SlimJara sicher?</label>
+      <div class="faq-body">
+        <p>Ja! SlimJara ist eine natürliche, proprietäre Formel, hergestellt nach höchsten Qualitätsstandards unter strengsten und hygienischsten Bedingungen.</p>
+        <p>Jeder Inhaltsstoff ist 100% pflanzlich, sojafrei, milchfrei, ohne Gentechnik und wird durch unabhängige Prüfungen auf maximale Reinheit und Wirksamkeit kontrolliert.</p>
+        <p>Wie immer empfehlen wir, vor der Einnahme Ihren Arzt zu konsultieren.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input class="faq-toggle" id="faq3" type="checkbox"/>
+      <label class="faq-label" for="faq3">Wie viele Dosen sollte ich bestellen?</label>
+      <div class="faq-body">
+        <p>Wenn Sie über 35 Jahre alt sind oder Übergewicht haben, empfehlen wir die Einnahme von SlimJara über mindestens 3 bis 6 Monate.</p>
+        <p>Dies gibt der Formel genügend Zeit, in Ihrem ganzen Körper zu wirken, Ihren Stoffwechsel zu verbessern und Ihnen zu helfen, Ihr Idealgewicht zu erreichen und dauerhaft zu halten.</p>
+        <p>Wir empfehlen das 6-Dosen-Paket für die besten Ergebnisse und den niedrigsten Preis pro Dose — plus kostenloser Versand.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input class="faq-toggle" id="faq4" type="checkbox"/>
+      <label class="faq-label" for="faq4">Wie nehme ich SlimJara am besten ein?</label>
+      <div class="faq-body">
+        <p>Nehmen Sie einfach eine (1) Kapsel SlimJara einmal täglich ein, etwa 30 Minuten vor Ihrer Morgen- oder Mittagsmahlzeit, mit einem vollen Glas Wasser.</p>
+        <p>Die fortschrittliche Ingwer-Formel mit peruanischem Ingwer beginnt sofort zu wirken und unterstützt die natürliche GLP-1/GIP-Aktivierung — sogar während Sie schlafen.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input class="faq-toggle" id="faq5" type="checkbox"/>
+      <label class="faq-label" for="faq5">Ist das eine einmalige Zahlung?</label>
+      <div class="faq-body">
+        <p>Ja! Ihre heutige Bestellung ist eine einmalige Zahlung. Es gibt keine automatischen Lieferungen, Abonnements oder versteckten Gebühren.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input class="faq-toggle" id="faq6" type="checkbox"/>
+      <label class="faq-label" for="faq6">Was ist, wenn SlimJara bei mir nicht wirkt?</label>
+      <div class="faq-body">
+        <p>Jede Dose SlimJara ist durch unsere persönliche 60-Tage-100%-Geld-zurück-Garantie geschützt.</p>
+        <p>Wenn Sie aus irgendeinem Grund nicht zufrieden sind, senden Sie einfach alle Dosen (auch leere) zurück und erhalten eine vollständige Rückerstattung ohne Fragen.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <input class="faq-toggle" id="faq7" type="checkbox"/>
+      <label class="faq-label" for="faq7">Was soll ich jetzt tun?</label>
+      <div class="faq-body">
+        <p>Das ist der spannende Teil! Klicken Sie auf eines der Pakete unten, geben Sie Ihre Bestelldaten auf unserer sicheren Bezahlseite ein und wir senden Ihnen Ihr SlimJara sofort zu.</p>
+        <p>Wählen Sie 6 Dosen für den besten Wert und kostenlosen Versand, oder beginnen Sie mit 3 Dosen, wenn Sie es erst ausprobieren möchten.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <div class="cta-banner-wrap">
+    <div class="cta-banner">
+      <h2>Sichern Sie sich Ihr vergünstigtes SlimJara mit <span>riesigem Rabatt</span></h2>
+    </div>
+  </div>
+  <div class="cta-cards-wrap">
+    <div class="potes-holder-grid final-cta-grid">
+
+      <div class="pote-card popular">
+        <div class="pote-header popular">🏆 Bestes Angebot — Empfohlen</div>
+        <div class="pote-body">
+          <div class="pote-name popular">6 Dosen</div>
+          <div class="pote-supply">180 Tage Vorrat</div>
+          <div class="pote-img-wrap tall"><img alt="6 Dosen" src="/images/6-unidades-1.png"/></div>
+          <div class="price-wrap"><div class="pote-price popular">€49</div><div class="per-label">pro<br/>Dose</div></div>
+          <div class="price-total">Gesamt: <s>€594</s> €294</div>
+        <div class="daily-price"> ✅ <span class="popular-txt">Nur €1,63/Tag </span></div>
+          <div class="pote-bonuses">
+            <div class="pote-bonus-row"><span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>Sie sparen €300!</div>
+            <div class="pote-bonus-row"><span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>Größter Rabatt</div>
+            <div class="pote-bonus-row"><span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>Gratis Geschenk inklusive</div>
+            <div class="pote-bonus-row"><span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>Kostenloser Versand</div>
+            <div class="pote-bonus-row"><span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>60-Tage-Garantie</div>
+          </div>
+          <a class="buy-btn" href="https://www.checkout-ds24.com/product/651021?aff=thiagorios">JETZT KAUFEN</a>
+          <div class="secure-line"><svg fill="none" viewbox="0 0 24 24"><rect height="10" rx="2" stroke="#5A6B63" stroke-width="1.8" width="14" x="5" y="11"/><path d="M8 11V7a4 4 0 018 0v4" stroke="#5A6B63" stroke-linecap="round" stroke-width="1.8"/></svg>Sichere Bezahlung</div>
+          <img alt="Zahlungsmethoden" class="cards-img" src="/images/cards.png"/>
+          <div class="pote-shipping">Kostenloser Versand!</div>
+        </div>
+      </div>
+
+      <div class="pote-card">
+        <div class="pote-header">Gutes Angebot</div>
+        <div class="pote-body">
+          <div class="pote-name">3 Dosen</div>
+          <div class="pote-supply">90 Tage Vorrat</div>
+          <div class="pote-img-wrap bigger"><img alt="3 Dosen" src="/images/3-unidades-1.png"/></div>
+          <div class="price-wrap"><div class="pote-price">€69</div><div class="per-label">pro<br/>Dose</div></div>
+          <div class="price-total">Gesamt: <s>€297</s> €207</div>
+        <div class="daily-price">✅Nur €2,30/Tag</div>
+          <div class="pote-bonuses">
+            <div class="pote-bonus-row"><span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>60-Tage-Geld-zurück-Garantie</div>
+            <div class="savings-row"><span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>Kostenloser Versand + Gratis Geschenk</div>
+          </div>
+          <a class="buy-btn" href="https://www.checkout-ds24.com/product/651019?aff=thiagorios">JETZT KAUFEN</a>
+          <div class="secure-line"><svg fill="none" viewbox="0 0 24 24"><rect height="10" rx="2" stroke="#5A6B63" stroke-width="1.8" width="14" x="5" y="11"/><path d="M8 11V7a4 4 0 018 0v4" stroke="#5A6B63" stroke-linecap="round" stroke-width="1.8"/></svg>Sichere Bezahlung</div>
+          <img alt="Zahlungsmethoden" class="cards-img" src="/images/cards.png"/>
+          <div class="pote-shipping">Kostenloser Versand!</div>
+        </div>
+      </div>
+
+      <div class="pote-card">
+        <div class="pote-header">Basis</div>
+        <div class="pote-body">
+          <div class="pote-name">2 Dosen</div>
+          <div class="pote-supply">60 Tage Vorrat</div>
+          <div class="pote-img-wrap bigger"><img alt="2 Dosen" src="/images/2-unidades.png"/></div>
+          <div class="price-wrap"><div class="pote-price">€79</div><div class="per-label">pro<br/>Dose</div></div>
+          <div class="price-total">Gesamt: <s>€198</s> €158</div>
+          <div class="pote-bonuses">
+            <div class="pote-bonus-row"><span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>60-Tage-Geld-zurück-Garantie</div>
+            <div class="savings-row"><span class="chk-icon"><svg fill="none" viewbox="0 0 20 20"><circle cx="10" cy="10" fill="#2E7D5B" r="9"/><path d="M5.5 10l3 3 6-6" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg></span>Sparen Sie €40 — 20% Rabatt</div>
+          </div>
+          <a class="buy-btn" href="https://www.checkout-ds24.com/product/663681?aff=thiagorios">JETZT KAUFEN</a>
+          <div class="secure-line"><svg fill="none" viewbox="0 0 24 24"><rect height="10" rx="2" stroke="#5A6B63" stroke-width="1.8" width="14" x="5" y="11"/><path d="M8 11V7a4 4 0 018 0v4" stroke="#5A6B63" stroke-linecap="round" stroke-width="1.8"/></svg>Sichere Bezahlung</div>
+          <img alt="Zahlungsmethoden" class="cards-img" src="/images/cards.png"/>
+          <div class="pote-shipping">+ Versandkosten</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="guarantee-block" style="margin-top:36px">
+      <h2 class="guarantee-title">100% Zufriedenheit<br/><span>60-Tage-Geld-zurück-Garantie</span></h2>
+      <div class="guarantee-row">
+        <div class="guarantee-badge"><img alt="60 Tage Garantie" src="/images/garantie.png"/></div>
+        <div class="guarantee-text">
+          Ihre heutige Bestellung ist durch unsere eiserne 60-Tage-<strong>100%-Geld-zurück-Garantie</strong> geschützt. Wenn Sie nicht begeistert sind, wie schnell Ihre hartnäckigen Fettpolster <strong>schmelzen</strong> und sich in reine Energie verwandeln, oder staunen, wenn Sie Ihren neuen <strong>schlanken, straffen</strong> Körper im Spiegel bewundern — dann lassen Sie es uns innerhalb von <strong>60 Tagen</strong> wissen und wir erstatten Ihnen jeden einzelnen Cent zurück. Keine Fragen gestellt.
+        </div>
+      </div>
+      <div class="certs-row"><img alt="Zertifizierungen" src="/images/c.png"/></div>
+      <p class="made-in"><strong>SlimJara wird nach höchsten Qualitätsstandards hergestellt</strong> mit den besten natürlichen Inhaltsstoffen.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<section class="section-footer">
+  <div class="footer-links-holder">
+    <a class="footer-link" href="../terms">AGB</a>
+    <a class="footer-link" href="../privacy">Datenschutz</a>
+    <a class="footer-link" href="../support">Kontakt</a>
+    <a class="footer-link" href="../support">Versand</a>
+    <a class="footer-link" href="../support">Rückgabe</a>
+  </div>
+  <p class="footer-text">
+    Alle Aussagen und Ergebnisse auf dieser Website dienen ausschließlich Informationszwecken. Sie stellen keine spezifische medizinische Beratung für eine einzelne Person dar. Weder die Website noch das Produkt ersetzen die medizinische Beratung durch einen zertifizierten Gesundheitsexperten. Wenn Sie gesundheitliche Probleme haben, Allergien bekannt sind, schwanger sind oder chronische Erkrankungen diagnostiziert wurden, wird dringend empfohlen, sofort Ihren Arzt zu konsultieren, bevor Sie Pillen oder Nahrungsergänzungsmittel einnehmen. Individuelle Ergebnisse können variieren. © 2025 SlimJara. Alle Rechte vorbehalten.
+    <br/><br/>
+    Die Aussagen auf dieser Website wurden nicht von einer Gesundheitsbehörde bewertet. Produkte sind nicht dazu bestimmt, Krankheiten zu diagnostizieren, zu behandeln, zu heilen oder zu verhindern. Wenn Sie schwanger sind, stillen, Medikamente einnehmen oder an einer Erkrankung leiden, konsultieren Sie Ihren Arzt, bevor Sie unsere Produkte verwenden.
+  </p>
+</section>
+
+<script>
+  (function(){
+    var cta = document.getElementById('stickyCta');
+    var ref = document.getElementById('first-pricing-grid');
+    if(!cta || !ref) return;
+    function onScroll(){
+      var rect = ref.getBoundingClientRect();
+      if(rect.bottom < 0){
+        cta.classList.add('visible');
+        window.removeEventListener('scroll', onScroll);
+      }
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+
+  /* ── COUNTDOWN TIMER — 15 min ── */
+  var fmTime = 15 * 60;
+  function fmUpdateTimer(){
+    var m = Math.floor(fmTime/60), s = fmTime%60;
+    var el = document.getElementById('countdownTimerGuarantee');
+    if(el){
+      el.textContent = ('0'+m).slice(-2)+':'+('0'+s).slice(-2);
+      if(fmTime===0) el.classList.add('expired');
+    }
+    if(fmTime>0) fmTime--;
+  }
+  setInterval(fmUpdateTimer,1000);
+  fmUpdateTimer();
+
+  /* ── STOCK COUNTER ── */
+  var fmStock = 250;
+  var fmStockEl = document.getElementById('fm-stock');
+</script>
+
+</body>
+</html>
